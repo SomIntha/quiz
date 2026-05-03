@@ -959,7 +959,7 @@
       return;
     }
 
-    // Submit to Netlify Forms
+    // Submit to systeme.io Forms
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -982,8 +982,8 @@
   }
 </script>
 
-<!-- Netlify Forms detection -->
-<form name="quiz-ventre" netlify netlify-honeypot="bot-field" hidden>
+<!-- systeme.io Forms detection -->
+<form name="quiz-ventre" systeme.io systeme.io-honeypot="bot-field" hidden>
   <input name="prenom" />
   <input name="email" />
   <input name="score" />
