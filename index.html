@@ -919,7 +919,11 @@
       alert('Merci de renseigner ton prénom et ton email pour voir ton résultat.');
       return;
     }
-
+fetch('https://hook.eu1.make.com/auqpysxa403hfbrb4uy92trphduw', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ prenom: prenom, email: email, score: totalScore })
+        }).catch(() => {});
     if (totalScore <= 6) {
       showScreen('screen-result-1');
     } else if (totalScore <= 12) {
