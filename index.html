@@ -920,7 +920,7 @@
       return;
     }
 fetch('https://hook.eu1.make.com/auqpysxa403hfbrb4uy92trphduw', {
-          method: 'POST',
+          method: 'POST', mode: 'no-cors',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ prenom: prenom, email: email, score: totalScore })
         }).catch(() => {});
